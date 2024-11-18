@@ -1,0 +1,60 @@
+
+.about-img-div {
+    position: relative;
+    top: 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 100%;
+  }
+
+
+.About-img-title{
+    position: sticky;
+    top: 14%;
+    padding-left: 6%;
+    font-size: 2.5rem;
+    margin-right: 40%;
+    color: #2F3C7E;
+    font-weight: 700;
+    font-family: "Public Sans", Verdana, sans-serif;
+}
+.aboutus-heading{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #8AAAE5;
+    margin-bottom: 0;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .about-img-div {
+        height: 45vh;
+      }
+    
+    .About-img-title{
+        position: absolute;
+        font-size: 2rem;
+    }
+    .about-us-para-div p{
+        font-size: 14px;
+    }
+
+    .aboutus-heading{
+        font-size: 2rem;
+        font-weight: 700;
+        color: #8AAAE5;
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+
+    .aboutus-heading{
+        font-size: 3rem;
+    }
+}
+

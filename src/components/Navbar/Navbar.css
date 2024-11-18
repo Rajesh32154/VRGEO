@@ -1,0 +1,148 @@
+/* General Navbar styling */
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&display=swap');
+
+/* Navbar base styling */
+.VrGeoNavbar {
+    background-color: #f4f5f6;
+    font-family: 'Geist Mono', monospace;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.VrGeoNavbar .navbar-brand {
+    padding: 0;
+}
+
+.VrGeoNavbar img {
+    height: 50px;
+    width: 145px;
+    object-fit: cover;
+}
+
+.navbar-logo-shift-right {
+    margin-left: 5rem;
+    padding-bottom: 0;
+}
+
+/* Margin for the entire Nav container */
+.custom-nav-margin {
+    margin-right: 8rem !important;
+}
+
+
+/* Active Link Style */
+.navbar-light .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #b04f4f;
+}
+
+/* Hover effect for nav links */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #b04f4f46;
+}
+
+/* Media Queries */
+
+/* Extra small devices (max-width: 375px) */
+@media (max-width: 375px) {
+    .VrGeoNavbar {
+        padding: 0.5rem;
+    }
+
+    .VrGeoNavbar img {
+        height: 30px;
+        width: 75px;
+        object-fit: cover;
+    }
+
+    .VrGeoNavbar .navbar-toggler-icon {
+        height: 1em;
+        width: 1em;
+    }
+
+    .navbar-logo-shift-right {
+        margin-left: 1rem;
+    }
+
+    .custom-nav-margin {
+        margin-right: 0;
+    }
+
+}
+
+/* Small devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .VrGeoNavbar {
+        padding: 0.5rem;
+    }
+
+    .VrGeoNavbar img {
+        height: 30px;
+        width: 85px;
+        object-fit: cover;
+    }
+
+    .navbar-logo-shift-right {
+        margin-left: 1rem;
+    }
+
+}
+
+/* Medium devices (min-width: 481px) and (max-width: 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .VrGeoNavbar img {
+        height: 40px;
+        width: 110px;
+        object-fit: cover;
+    }
+
+    .navbar-logo-shift-right {
+        margin-left: 3rem;
+    }
+
+
+}
+
+/* Large devices (min-width: 1025px) and (max-width: 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+
+    .navbar-logo-shift-right {
+        margin-left: 4rem;
+    }
+
+    .custom-nav-margin {
+        margin-right: 5rem;
+    }
+}
+
+/* Extra large devices (min-width: 1441px) */
+@media (min-width: 1441px) {
+
+
+    .navbar-logo-shift-right {
+        margin-left: 5rem;
+    }
+
+    .custom-nav-margin {
+        margin-right: 8rem;
+    }
+
+}
+
+/* Ultra-wide devices (min-width: 1880px) */
+@media (min-width: 1880px) {
+
+
+    .navbar-logo-shift-right {
+        margin-left: 6rem;
+    }
+
+    .custom-nav-margin {
+        margin-right: 10rem;
+    }
+
+}

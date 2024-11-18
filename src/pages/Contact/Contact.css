@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Container for the entire contact section */
+.VREGOcontact-section {
+    position: relative;
+    padding: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Background image with blur using pseudo-element */
+.VREGOcontact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://kessc.edu.in/wp-content/uploads/2024/06/contact.jpeg);
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(2px); */
+    z-index: 0;
+}
+
+/* Section content positioned above the blurred background */
+.VREGOsection-header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 20px;
+}
+
+.VREGOsection-header h2 {
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.VREGOcontact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Ensures content is aligned at the top */
+    align-items: flex-start;
+}
+
+.VREGOcontact-info h2 {
+    font-weight: 700;
+    font-size: 2em;
+    padding-left: 3rem;
+    margin-bottom: 20px;
+    margin-top: 16px;
+    color: #9e8629;
+}
+
+.VREGOcontact-info-item {
+    display: flex;
+    align-items: center;
+    /* Vertically centers the icon and content */
+    margin-bottom: 20px;
+    /* Adds space between each item */
+    justify-content: flex-start;
+    /* Ensures the content is aligned left */
+    padding-left: 16px;
+}
+
+.VREGOcontact-info-icon {
+    /* height: 50px;
+    width: 50px;
+    background-color: #00bcd4;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; */
+    font-size: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    /* Adds space between the icon and the text */
+}
+
+.VREGOcontact-info-content {
+    text-align: justify;
+    width: 71%;
+}
+
+.VREGOcontact-info-content h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #1da9c0;
+}
+
+.VREGOcontact-info-content p {
+    color: #333;
+    font-size: 1em;
+}
+
+
+
+/* Row and container styling */
+.contactRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+.VREGOsectionContainer {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    position: relative;
+    z-index: 1;
+    flex: 1 1 0%;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form h2 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Box Styling */
+.VREGOinput-box {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.VREGOinput-box input,
+.VREGOinput-box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background: transparent;
+    color: #333;
+    resize: none;
+}
+
+.VREGOinput-box span {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.VREGOinput-box input:focus~span,
+.VREGOinput-box textarea:focus~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.VREGOinput-box input[type="submit"] {
+    width: 100%;
+    background: #00bcd4;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.VREGOinput-box input[type="submit"]:hover {
+    background: #fff;
+    color: #00bcd4;
+    border: 1px solid #00bcd4;
+}
+
+
+
+@media screen and (max-width: 575px) {
+    .VREGOsection-header h2 {
+        font-size: 2.2em;
+    }
+
+    .VREGOcontact-info h2 {
+        padding-left: 0;
+    }
+
+    .contactRow .VREGOcontact-info {
+        padding: 0 !important;
+    }
+}

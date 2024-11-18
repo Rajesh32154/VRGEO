@@ -1,0 +1,145 @@
+/* Ensure the image scales properly on all devices */
+.products-carousel .carousel-image {
+    height: 60vh; /* Adjust this height as needed */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+@media (max-width: 768px) {
+    .products-carousel .caption-title {
+        font-size: 1rem !important; 
+     
+    }
+    .products-carousel .carousel-image {
+        height: 50vh; /* Adjust height for medium screens (tablets) */
+    }
+
+    .container_product .heading {
+     display:none !important; /* Smaller heading size for medium screens */
+    }
+
+    .container_product .description {
+        font-size: 14px; /* Smaller description for medium screens */
+        margin-top: 15px; /* Adjust margin */
+    }
+}
+
+@media (max-width: 576px) {
+    .products-carousel .carousel-image {
+        height: 40vh; /* Adjust height for small screens (phones) */
+    }
+
+    .products-carousel .caption-title {
+        font-size: 1rem !important; 
+     
+    }
+
+  
+    .products-carousel .caption-text {
+        font-size: 0.8rem !important;
+
+        margin-top: 10px;
+        padding: 2px 0px;
+        border-radius: 5px;
+
+         /* Smaller description on small screens */
+    }
+
+    .products-carousel .carousel-caption-custom {
+        bottom: 1.5% !important; /* Adjust caption position on small screens */
+    }
+
+    .container_product .heading {
+        font-size: 1rem; /* Further reduced heading size for small screens */
+    }
+
+    .container_product .description {
+        font-size: 12px; /* Further reduced description size */
+        margin-top: 10px; /* Adjust margin */
+    }
+
+
+    .products-carousel .caption-button {
+        margin-top: 5px !important; /* Space above the button */
+        padding: 5px 5px !important; /* Add padding for button */
+        border-radius: 5px !important; /* Rounded corners */
+    }
+}
+
+/* Custom styles for captions */
+.products-carousel .carousel-caption-custom {
+    bottom: 20% !important; /* Ensure caption is correctly positioned */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add shadow to text for readability */
+}
+
+.products-carousel .caption-title {
+    font-size: 2rem; /* Default title size */
+   
+}
+
+.products-carousel .caption-text {
+    font-size: 1.1rem; /* Default text size */
+    font-style: italic; /* Italic style for description */
+    margin-top: 10px; /* Add space between text and title */
+    padding: 5px 15px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.products-carousel .caption-button {
+    margin-top: 15px; /* Space above the button */
+    padding: 10px 20px; /* Add padding for button */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hide carousel controls on mobile */
+.products-carousel .carousel-control-next,
+.products-carousel .carousel-control-prev {
+    display: none !important;
+}
+
+/* Container product styles */
+.container_product {
+    text-align: center; /* Center content */
+    margin: 50px auto; /* Center container horizontally */
+    padding: 0 15px; /* Add padding on small screens */
+}
+
+.container_product .title {
+    color: #ff69b4; /* Pink color for title */
+    font-size: 18px; /* Font size for title */
+    font-weight: bold; /* Bold font */
+}
+
+.container_product .heading {
+    font-size: 1.8rem; /* Default heading size */
+    font-weight: bold; /* Bold font */
+    color: #333; /* Dark gray color */
+}
+
+.container_product .description {
+    font-size: 16px; /* Default description size */
+    color: #666; /* Light gray color */
+    margin-top: 20px; /* Margin above description */
+}
+
+.Download_title{
+    font-size: 1.3rem;
+}
+
+.Download_title_details{
+    font-size: 1rem;
+}
+
+
+.carousel_Conent{
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for title */
+    padding: 10px 20px; /* Add padding to the title */
+    border-radius: 5px; /* Rounded corners */
+    
+}
+
+
+
+.img_wraper {
+    height: 409px !important;
+}
+
