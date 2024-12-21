@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaAddressCard, FaPhone } from 'react-icons/fa';
 import './Footer.css'; // Add styles for this component
@@ -40,13 +41,13 @@ const Footer = () => {
                                 <div className="VrGeoservice-widget VrGeofooter-widget">
                                     <div className="VrGeofooter-title">Our Services</div>
                                     <ul className="VrGeolist">
-                                        <li><a href="/services">Geospatial Solutions</a></li>
-                                        <li><a href="/services">Image Processing</a></li>
-                                        <li><a href="/services">Photogrammetry</a></li>
-                                        <li><a href="/services">GIS</a></li>
-                                        <li><a href="/innovation">Web Applications</a></li>
-                                        <li><a href="/innovation">Large Scale Data</a></li>
-                                        <li><a href="/innovation">Professional Services</a></li>
+                                        <li><Link to="/services">Geospatial Solutions</Link></li>
+                                        <li><Link to="/services">Image Processing</Link></li>
+                                        <li><Link to="/services">Photogrammetry</Link></li>
+                                        <li><Link to="/services">GIS</Link></li>
+                                        <li><Link to="/innovation">Web Applications</Link></li>
+                                        <li><Link to="/innovation">Large Scale Data</Link></li>
+                                        <li><Link to="/innovation">Professional Services</Link></li>
                                     </ul>
                                 </div>
                             </Col>
